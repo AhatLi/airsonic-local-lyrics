@@ -17,3 +17,7 @@ CMD ["/opt/tomcat/bin/catalina.sh", "run"]
 
 EXPOSE 4040
 VOLUME /media /var/airsonic
+
+# docker build -t airsonic-local-lyric:1 .
+#
+# docker run -d --name=airsonic -e TZ=asia/seoul -p 8080:8080 -v /root/airsonic:/var/airsonic   -v /root/airsonic/media:/media  --restart unless-stopped  airsonic-local-lyric:1
