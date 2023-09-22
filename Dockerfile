@@ -15,7 +15,7 @@ COPY airsonic-main/target/airsonic.war /opt/tomcat/webapps/
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
 
-EXPOSE 4040
+EXPOSE 8080
 VOLUME /media /var/airsonic
 
 # docker build -t airsonic-local-lyric:1 .
